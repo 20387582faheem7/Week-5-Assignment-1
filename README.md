@@ -15,6 +15,40 @@ class Smartphone:
         else:
             print("Invalid price. Must be greater than 0.")
 
+            # ACTIVITY 2
+            # Base class
+class Vehicle:
+    def move(self):
+        pass  # Placeholder for polymorphism
+
+# Subclass 1 - Car
+class Car(Vehicle):
+    def move(self):
+        print("Driving on the road 🚗")
+
+# Subclass 2 - Plane
+class Plane(Vehicle):
+    def move(self):
+        print("Flying in the sky ✈️")
+
+# Subclass 3 - Boat
+class Boat(Vehicle):
+    def move(self):
+        print("Sailing on the water 🚢")
+
+# Subclass 4 - Bicycle
+class Bicycle(Vehicle):
+    def move(self):
+        print("Pedaling on the path 🚴")
+
+# Creating objects of each class
+vehicles = [Car(), Plane(), Boat(), Bicycle()]
+
+# Calling move() method for each object
+for vehicle in vehicles:
+    vehicle.move()
+
+
 # Subclass (Inheritance)
 class Smartwatch(Smartphone):
     def __init__(self, brand, model, price, battery_life):
